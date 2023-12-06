@@ -10,13 +10,13 @@ public:
 class Dog : public Animal {
 public:
   void speak() {
-    print("hey im a dog");
+    std::cout << "hey im a dog" << std::endl;
   };
 };
 
 class Cat : public Animal {
 public:
   void speak() {
-    print("hey im a cat");
+    std::cout << "hey im a cat" << std::endl;
   }
-}
+};
