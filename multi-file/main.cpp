@@ -6,7 +6,7 @@ int main() {
 
     // Speak twice
     dog->speak();
-    dog->speek();
+    dog->speak();
 
     return 0;
 }

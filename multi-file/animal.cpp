@@ -1,6 +1,10 @@
+#include <iostream>
+
 class Animal {
 public:
-  virtual void speak() = 0;
+  void speak() {
+    std::cout << "hey im an animal" << std::endl;
+  }
 };
 
 class Dog : public Animal {

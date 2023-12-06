@@ -1,6 +1,6 @@
 class Animal {
   public:
-    virtual void speak() = 0;
+    void speak();
 };
 
 class Dog : public Animal {
