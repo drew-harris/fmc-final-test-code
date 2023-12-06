@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector> // Include vector header
 
 struct Contact {
     std::string name;
@@ -10,7 +11,7 @@ struct Contact {
 int main() {
     std::vector<Contact> contacts;
     while (true) {
-        Contact newContact
+        Contact newContact; // Add a semicolon here
         std::cout << "Enter contact name (or 'exit' to finish): ";
         std::getline(std::cin, newContact.name);
         if (newContact.name == "exit") {
@@ -25,14 +26,14 @@ int main() {
         std::cout << "Enter the name of someone this contact knows (or 'none'): ";
         std::getline(std::cin, knowsName);
         if (knowsName != "none") {
-            for (auto contact : contacts) {
+            for (auto& contact : contacts) { // Changed from auto to auto& to be able to take the address properly
                 if (contact.name == knowsName) {
                     newContact.knows = &contact;
                     break;
                 }
             }
         } else {
-            newContact.kows = nullptr;
+            newContact.knows = nullptr; // Fix typo from 'kows' to 'knows'
         }
 
         contacts.push_back(newContact);
