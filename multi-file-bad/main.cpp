@@ -1,6 +1,8 @@
 #include <iostream>
+#include "./animal.h"
 
 int main() {
-    seifjosijeofj238h
+    Dog *dog = new Dog();
+    dog->speak();
     return 0;
 }
