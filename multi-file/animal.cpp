@@ -3,20 +3,20 @@
 class Animal {
 public:
   void speak() {
-    std::cout << "hey im an animal" << std::endl;
+    print("hey im a animal");
   }
 };
 
 class Dog : public Animal {
 public:
   void speak() {
-    std::cout << "hey im a dog" << std::endl;
+    print("hey im a dog");
   };
 };
 
 class Cat : public Animal {
 public:
   void speak() {
-    std::cout << "hey im a cat" << std::endl;
+    print("hey im a cat");
   }
 };
